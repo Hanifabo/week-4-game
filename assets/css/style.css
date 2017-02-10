@@ -1,0 +1,244 @@
+*{box-sizing: border-box}
+
+body{
+    width: 968px;
+    margin: 0 auto;
+    font-family: Helvetica, Georgia, sans-serif;
+    background-image: url("../images/mainbackground.jpg");
+    height: auto;
+}
+
+
+ul{
+    padding:0px;
+    margin:0px;
+    list-style-type:none;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+li{
+  flex: 0 0 145px;
+}
+
+li{
+   border: 1px solid black;
+    background-color: darkcyan;
+    height: 190px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+li:hover{
+    border: 3px solid lightgreen;
+    background-color: darkcyan;
+    height: 195px;
+}
+.charactherContainer{
+
+}
+
+article{
+    height: 260px;
+    width: 100%;
+    margin: 5px;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+article .fightboard{
+    height: auto;
+    background-color: transparent;
+}
+
+article .fighter .figtherlist{
+    background-color: transparent;
+}
+
+article .myfighter{
+    background-color: transparent;
+    margin-bottom: 15px;
+}
+
+article.selectChar{
+    height: 320px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: transparent;
+    border: 2px solid white;
+}
+#char1{
+    flex: 0 0 30%;
+    background-color: antiquewhite;
+    height: auto;
+    margin: 5px;
+    border: 2px solid darkcyan;
+}
+
+#char2{
+    flex: 0 0 40%;
+
+    /*background-image: url("./assets/images/glow-background.jpg");*/
+    height: 300px;
+    margin: 5px;
+    border: 2px solid darkcyan;
+}
+
+#char3{
+    flex: 0 0 20%;
+    background-color: darkcyan;
+    height: 300px;
+    margin: 5px;
+}
+
+.char{
+    background-color: aliceblue;
+}
+
+
+img.miniImage{
+    width:150px;
+    height:190px ;
+    padding:3px;
+}
+
+#char3{
+    width:150px;
+    height:300px ;
+    padding:3px;
+}
+
+h3{
+    color: darkred;;
+    font-weight:bolder;
+    text-align: center;
+    padding:2px;
+    margin-bottom: 1px;
+    text-decoration: underline;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+}
+
+.pname{
+    font-weight: bold;
+    padding:10px;
+    color: steelblue;
+    margin-top: 0px;
+}
+.btnattack{
+    width: 100px;
+    height:25px;
+    margin: 0px;
+    margin-left:43%;
+    background-color: darkred;
+    color: white;
+    display: inline;
+}
+.btnplayagin{
+    width: 100px;
+    height:25px;
+    margin: 0px;
+    margin-left:43%;
+    background-color: darkred;
+    color: white;
+    display: inline;
+}
+.btnstart{
+    width: 100px;
+    height:35px;
+    margin: 0px;
+    margin-left:43%;
+    background-color: green;
+    color: white;
+    display: inline;
+}
+
+.selectEnemie{
+    padding: 0px;
+    margin-left:39%;
+    color: red;
+    text-decoration: blink;
+}
+
+.winnannounce{
+    padding: 0px;
+    margin-left:39%;
+    color: red;
+    text-decoration: blink;
+    font-size: 24px;
+}
+
+section.ul{
+    padding:0px;
+    margin:0px;
+    list-style-type:none;
+}
+
+section.ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+section.li{
+    flex: 0 0 145px;
+}
+section.li{
+    border: 1px solid black;
+    background-color: darkcyan;
+    height: 190px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.dsplChar{
+   height: 650px;
+
+}
+
+.scoreboard{
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.secondContChild{
+    flex: 1 1 450px;
+    color: white;
+}
+
+.firstCont{
+    flex: 0 0 968px;
+    height: 230px;
+    padding: 10px;
+    background-color: transparent;
+}
+#h3d{
+    margin: 2px;
+    text-decoration: none;
+
+}
+
+legend{
+    color: white;
+}
+.numbering{
+    position: relative;
+    top: -41px;
+    left: 55px;
+    background-color: transparent;
+    width: 40px;
+    color: red;
+    font-weight: bold;
+}

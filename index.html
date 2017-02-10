@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="./assets/javascript/game.js"></script>
+    </head>
+
+    <body>
+
+    <header>
+            <h1>Star Wars RPG</h1>
+        </header>
+
+        <div class = "charactherContainer">
+
+            <!-- this is the characters display container -->
+        <fieldset >
+                <legend>Characters</legend>
+                <ul>
+                    <li class="character" id="zero">
+                        <img src="./assets/images/kitana still.jpg" class = "miniImage" alt="Kitana <br> Power: #190" >
+                        <div class="numbering" id="power0">Ready</div>
+                    </li>
+                    <li class="character"  id="one">
+                        <img src="./assets/images/kunglaostill.jpg" class = "miniImage" alt=" Kung_lao <br> Power: #140">
+                        <div class="numbering" id="power1">Ready</div>
+                    </li>
+                    <li class="character"  id="two">
+                        <img src="./assets/images/raidenstill.jpg" class = "miniImage" alt=" Raiden <br> Power: #290">
+                        <div class="numbering" id="power2">Ready</div>
+                    </li>
+                    <li class="character"  id="three">
+                        <img src="assets/images/Sonya.jpg"  class = "miniImage" alt="Sonya <br> Power: #190">
+                        <div class="numbering" id="power3">Ready</div>
+                    </li>
+                    <li class="character" id="four">
+                        <img src="assets/images/sub_zerostill.jpg" class = "miniImage"alt="Sub_zero <br> Power: #90">
+                        <div class="numbering" id="power4">Ready</div>
+                    </li>
+                </ul>
+
+         </fieldset>
+
+        <article class="selectChar">
+
+            <section class="selectedCharacter char"id="char1">
+                <h3 class="selectedFighter">Selected Fighter Facts</h3>
+                <p class="pname">Name: Katina <br>
+                Powers: fire<br>
+                Fight Skills 75%<br>
+                Rating: ***..
+                </p>
+
+            </section>
+
+            <section class="dsplChar char" id="char2">
+                <img src="./assets/images/kitana.gif" class = "motionchar">
+                <img src="./assets/images/kitana.gif" class = "motionchar">
+            </section>
+            <section class="dsplChar char" id="char3">
+                <img src="assets/images/weapons.jpg"  width="185px;" height="295px">
+            </section>
+
+        </article>
+
+        <article class="fightboard">
+
+                <section class="enemyCharacter fight"id="chr1">
+                   <h3> Enemies available to attack</h3>
+                    <ul  class ="myfighter">
+
+                    </ul>
+
+                </section>
+
+            <section class="figtherlist">
+
+                <h3 id ="h3d">Selected Fighter</h3>
+
+                <ul class="fighter">
+
+                </ul>
+             <button class="btnstart">Click to Start Fighting</button>
+             <button class="btnattack">attack</button>
+              <button class="btnplayagin">Play Again</button>
+             <p class="selectEnemie">Select one Enemie above to fight</p>
+              <p class="winnannounce">You Won!!!!!! click to play again</p>
+
+            </section>
+
+        </article>
+
+            <article class ="scoreboard">
+
+                <div class="firstCont">
+                </div>
+
+                <div class="firstCont">
+                    <div class="secondContChild">
+                        You attacked <span class="compFightName"> </span> for <span id="attackPower"></span> damage<br>
+                        <span class="compFightName"></span> attacked you back for <span id="deffPower"></span> damage.
+                    </div>
+
+                    <div class="secondContChild">
+                    </div>
+
+                </div>
+
+            </article>
+
+        <footer>
+            &copy hanifa booba;
+
+        </footer>
+
+        </div>
+    </body>
+
+</html>
