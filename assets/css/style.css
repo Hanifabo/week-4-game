@@ -171,8 +171,8 @@ h1{
 
 .winnannounce{
     padding: 0px;
-    margin-left:39%;
-    color: red;
+    margin-left:30%;
+    color: white;
     text-decoration: blink;
     font-size: 24px;
 }
@@ -241,4 +241,24 @@ legend{
     width: 40px;
     color: red;
     font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+.ene {
+    color:white;
+}
+
+.h3d {
+    color:white;
+}
+
+.selectEnemie {
+    color:white;
 }

@@ -9,6 +9,7 @@ var fighterName="";
 var DeffighterName ="";
 var attackScoreValueSelector ="";
 var defendScoreValueselector="";
+
 $(document).ready(function(){
     $(init);
 
@@ -27,6 +28,7 @@ $(document).ready(function(){
         if(counter===1){
             attackScoreValueSelector = "#"+$(this).find(".numbering").attr('id');
             attackerId  =fighterfacts;
+            attackerfighterID = "#"+characterSelector;
             fighterName =fighterfacts.split("<br>")[0];
             $(".btnstart").hide();
             $(".selectEnemie").show();
@@ -139,14 +141,16 @@ $(document).ready(function(){
          attackScoreValueSelector ="";
          defendScoreValueselector="";
          weHaveAWinner = false;
-        $(".winnannounce").hide();
+        location.reload();
         $(".selectEnemie").show();
         //$(".btnstart").show();
 
     });
 
     $(".winnannounce").on('click',function() {
-        $(".btnplayagin").show();
+        $(".winnannounce").hide();
+        location.reload();
+
     });
 });
 
@@ -183,23 +187,16 @@ function removerCharacterList() {
     });
 }
 
-
 //attack button
 function attackScoreValidator(){
 
     if(weHaveAWinner === true){
-
-       // alert("W've got a winner already play a new Game")
-        $(".winnannounce").show();
-
 
     }
     else{
         //  var character = prompt("pleas enter your playe name");
         var attackLevel = fighterAttackLevel();
         var defendLevel = defenderAttackLevel();
-       // alert("fight power: "+attackLevel);
-        //alert("defend power: "+defendLevel);
         $("#attackPower").text(attackLevel);
         $("#deffPower").text(defendLevel);
 
@@ -226,10 +223,13 @@ function attackScoreValidator(){
         if(attackerlifeValue <= 0){
             weHaveAWinner= true;
             // alert("The Grab ID: "+defendentfighterID);
-            $(defendentfighterID).remove();
+            $(attackerfighterID).remove();
            // $(".btnstart").show();
             $(".btnattack").hide();
-            $(".btnplayagin").show();
+            $(".scoreboard").hide();
+            $(".winnannounce").text(DeffighterName+" WINS!!!  click to play again");
+            $(".winnannounce").show();
+
 
         } else if(defenderlifeValue <=0){
             weHaveAWinner = true;
@@ -237,7 +237,9 @@ function attackScoreValidator(){
             $(defendentfighterID).remove();
             //$(".btnstart").show();
             $(".btnattack").hide();
-            $(".winnannounce").show();
+            $(".scoreboard").hide();
+            $(".winnannounce").text(fighterName+" WINS!!! click to play again");
+           $(".winnannounce").show();
 
         }
     }
