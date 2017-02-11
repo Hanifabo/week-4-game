@@ -217,29 +217,28 @@ function attackScoreValidator(){
         $(attackScoreValueSelector).text(attackerlifeValue);
         $(defendScoreValueselector).text(defenderlifeValue);
 
-        //console.log("Attacking: "+attackerlifeValue);
-       // console.log("Defending: "+defenderlifeValue);
 
         if(attackerlifeValue <= 0){
             weHaveAWinner= true;
-            // alert("The Grab ID: "+defendentfighterID);
             $(attackerfighterID).remove();
-           // $(".btnstart").show();
             $(".btnattack").hide();
             $(".scoreboard").hide();
+            $("#defendentfighterID").off("click");
             $(".winnannounce").text(DeffighterName+" WINS!!!  click to play again");
             $(".winnannounce").show();
-
+            $(".fightboard, .defendCharacters, .character, .fighterSlected ").off("click");
 
         } else if(defenderlifeValue <=0){
             weHaveAWinner = true;
-            //alert("The Grab ID: "+defendentfighterID);
             $(defendentfighterID).remove();
-            //$(".btnstart").show();
+            $("#attackerfighterID").off("click");
             $(".btnattack").hide();
             $(".scoreboard").hide();
             $(".winnannounce").text(fighterName+" WINS!!! click to play again");
-           $(".winnannounce").show();
+            $(".winnannounce").show();
+            $(".fightboard, .defendCharacters, .character, .fighterSlected ").off("click");
+
+
 
         }
     }
